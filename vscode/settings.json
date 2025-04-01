@@ -6,7 +6,7 @@
     */
     "window.titleBarStyle": "custom",
     "window.commandCenter": false,
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "vscode-icons",
     "debug.console.fontSize": 16,
     "scm.inputFontSize": 16,
     "markdown.preview.fontSize": 16,
@@ -22,16 +22,15 @@
         *************************************************************
     */
     "terminal.integrated.gpuAcceleration": "on",
-    "terminal.integrated.enableMultiLinePasteWarning": false,
-    "terminal.integrated.fontFamily": "Hack Nerd Font",
+    "terminal.integrated.enableMultiLinePasteWarning": "auto",
+    "terminal.integrated.fontFamily": "Hack Nerd Font, Consolas, 'Courier New', monospace",
     "terminal.integrated.fontWeight": "normal",
-    "terminal.integrated.fontSize": 18,
-    "terminal.integrated.defaultProfile.linux": "fish",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.defaultProfile.linux": "zsh",
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "terminal.integrated.profiles.linux": {
         "bash": { "path": "bash", "icon": "terminal-bash" },
         "zsh":  { "path": "zsh" },
-        "fish": {"path": "fish" },
         "tmux": {"path": "tmux", "icon": "terminal-tmux" },
         "pwsh": { "path": "pwsh", "icon": "terminal-powershell"}
     },
@@ -41,9 +40,10 @@
         *********************editor related**************************
         *************************************************************
     */
+    "editor.inlineSuggest.enabled": true,
     "editor.fontFamily": "Hack Nerd Font",
     "editor.fontWeight": "normal",
-    "editor.fontSize": 18,
+    "editor.fontSize": 17,
     "editor.lineHeight": 21,
     "editor.renderLineHighlight": "all",
     "editor.cursorBlinking": "smooth",
@@ -54,56 +54,6 @@
             "fontStyle": ""
         },
     },
-
-    /*
-        *************************************************************
-        ************************vim related**************************
-        *************************************************************
-    */
-    "vim.leader": "<space>",
-    "vim.highlightedyank.color": "rgba(250, 240, 170, 0.5)",
-    "vim.hlsearch": true,
-    "vim.visualstar": true,
-    "vim.useCtrlKeys": true,
-    "vim.easymotion": true,
-    "vim.useSystemClipboard": true,
-    "vim.normalModeKeyBindingsNonRecursive": [
-        { "before": ["J"],             "after": ["1", "0", "j"] }, // move down 10 lines
-        { "before": ["K"],             "after": ["1", "0", "k"] }, // move up 10 lines
-        { "before": ["H"],             "after": ["0"] },           // jump to the head of line
-        { "before": ["L"],             "after": ["$"] },           // jump to the end of line
-        { "before": ["n"],             "after": ["n", "z", "z"] }, // jump to the center of current tab
-        { "before": ["*"],             "after": ["*", "z", "z"] }, // move current line to the center of current tab
-        { "before": ["<Leader>", "h"], "after": ["<C-w>", "h"] },  // jump to left window
-        { "before": ["<Leader>", "j"], "after": ["<C-w>", "j"] },  // jump to bottom window
-        { "before": ["<Leader>", "k"], "after": ["<C-w>", "k"] },  // jump to top windows
-        { "before": ["<Leader>", "l"], "after": ["<C-w>", "l"] },  // jump to right window
-        { "before": ["<Leader>", "]"], "after": ["g", "t"] },      // jump to right tab
-        { "before": ["<Leader>", "["], "after": ["g", "T"] },      // jump to left tab
-        { "before": ["<Leader>", "o"], "after": ["o", "<ESC>"] },  // insert a blank line
-        { "before": ["<Leader>", "q"], "commands": [":q!"] },      // close current tab
-        { "before": ["<Leader>", "Q"], "commands": [":qa!"] },     // close all tabs
-        { "before": ["<Leader>", "w"], "commands": [":wa"] },      // save all
-        { "before": ["u"],             "commands": ["undo"] },     // undo
-        { "before": ["<C-r>"],         "commands": ["redo"] },     // redo
-        { "before": ["<Leader>", "s"], "commands": [":split"] },   // split window horizontal
-        { "before": ["<Leader>", "v"], "commands": [":vsplit"] },  // split window vertical
-        { "before": [">"],             "commands": ["editor.action.indentLines"] },      // move indent right
-        { "before": ["<"],             "commands": ["editor.action.outdentLines"] },     // move indent left
-        { "before": ["<Leader>", "/"], "commands": ["editor.action.commentLine" ] },     // comment out and in
-        { "before": ["<Leader>", ":"], "commands": ["workbench.action.showCommands"] },  // show all commands
-        { "before": ["<Leader>", ";"], "commands": ["workbench.action.quickOpen"] },     // search file
-        { "before": ["["],             "commands": ["editor.action.peekDefinition"] },   // show definition
-        { "before": ["]"],             "commands": ["C_Cpp.PeekDeclaration"], "when": ["editorLangId == c"] }, // show declaration(only supported in C)
-    ],
-    "vim.visualModeKeyBindingsNonRecursive": [
-        { "before": [">"],             "commands": ["editor.action.indentLines"] },      // move indent right (multiple lines)
-        { "before": ["<"],             "commands": ["editor.action.outdentLines"] },     // move indent left (multiple lines)
-        { "before": ["<Leader>", "/"], "commands": ["editor.action.commentLine" ] },     // comment out and in (multiple lines)
-    ],
-    "vim.insertModeKeyBindings": [
-        { "before": ["j", "j"],        "after": ["<Esc>"] },        // faster switch between insert mode and normal mode
-    ],
 
     /*
         *************************************************************
@@ -128,7 +78,7 @@
     "git.openRepositoryInParentFolders": "never",
     "workbench.startupEditor": "welcomePage",
     "clock.dateFormat": "hh:MM:ss TT",
-    "workbench.colorTheme": "Ayu Mirage",
+    "workbench.colorTheme": "One Dark Pro Darker",
     "cmake.pinnedCommands": [
         "workbench.action.tasks.configureTaskRunner",
         "workbench.action.tasks.runTask"
@@ -136,5 +86,7 @@
     "workbench.editor.enablePreview": false,
     "window.menuBarVisibility": "compact",
     "workbench.layoutControl.enabled": false,
-    "editor.minimap.enabled": false,
+    // "editor.minimap.enabled": false,
+    "editor.minimap.maxColumn": 30,
+    "autoDocstring.docstringFormat": "google-notypes",
 }

@@ -1,0 +1,95 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "C_Cpp.default.compilerPath": "",
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "autoDocstring.docstringFormat": "google-notypes",
+    "editor.fontSize": 17,
+    "editor.fontFamily": "'Consolas', 'Courier New', monospace",
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "eeyore.yapf"
+    },
+    "editor.inlineSuggest.enabled": true,
+    "settingsSync.ignoredExtensions": [],
+    "files.eol": "\n",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "code-runner.saveFileBeforeRun": true,
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.unicodeHighlight.allowedLocales": {
+        "zh-hans": true,
+        "zh-hant": true
+    },
+    "files.associations": {
+        "*.py": "python",
+        "*.cu": "cuda"
+    },
+    "remote.SSH.remotePlatform": {
+        "我的ubuntu": "linux",
+        "huyuqi": "linux",
+        "192.168.10.125": "linux",
+        "A100": "linux",
+        "10.97.100.241": "linux",
+        "10.103.42.53": "linux",
+        "10.10.112.52": "linux",
+        "自己的主机": "linux",
+        "自己主机frp": "linux",
+        "aliyun": "linux",
+        "worker38_d": "linux",
+        "worker38_d_new": "linux",
+        "worker38": "linux",
+        "worker38_d_v122_d": "linux",
+        "worker13_d_v201": "linux",
+        "worker38_d_v201": "linux",
+        "worker38_v201": "linux"
+    },
+    "cmake.showOptionsMovedNotification": false,
+    "doxdocgen.generic.authorEmail": "shaohu.li@horizon.ai",
+    "doxdocgen.generic.authorName": "shaohu.li",
+    "editor.guides.bracketPairs": "active",
+    "remote.autoForwardPortsSource": "hybrid",
+    "git.ignoreLegacyWarning": true,
+    "gitlens.advanced.messages": {
+        "suppressGitVersionWarning": true
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Windows PowerShell": {
+            "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+        }
+    },
+    "editor.codeActionsOnSave": {
+    },
+    "editor.minimap.maxColumn": 60,
+    "security.workspace.trust.untrustedFiles": "open",
+
+    "workbench.startupEditor": "none",
+    "settingsSync.ignoredSettings": [],
+    "terminal.integrated.fontFamily": "Hack Nerd Font Mono, Consolas, 'Courier New', monospace",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+}

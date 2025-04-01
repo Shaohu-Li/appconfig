@@ -13,6 +13,9 @@ echo hostname=${hostname} >> ~/.hostname.sh
 
 sudo apt-get update
 
+# install font
+bash font.sh
+
 directories=("bash" "zsh" "tmux" "peco")
 
 for dir in "${directories[@]}"; do
