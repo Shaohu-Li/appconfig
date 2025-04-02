@@ -3,7 +3,7 @@
 # General aliases
 alias ls='ls -p --color=auto'
 alias la='ls -A'
-alias sleep='sudo systemctl suspend'
+alias sleep='systemctl suspend'
 alias make='make -j64'
 alias gt='git log --graph --pretty=format:"%x09%C(auto) %h %Cgreen %ar %Creset%x09 %C(cyan ul)%an%Creset %x09%C(auto)%s %d"'
 alias gm='git commit -m'

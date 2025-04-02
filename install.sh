@@ -11,7 +11,7 @@ echo "Hello ${hostname}"
 rm ~/.hostname.sh
 echo hostname=${hostname} >> ~/.hostname.sh
 
-sudo apt-get update
+apt-get update
 
 # install font
 # bash font.sh

@@ -173,20 +173,20 @@ function detect_platform() {
   case "$OS" in
     Linux)
       if [ -f "/etc/arch-release" ] || [ -f "/etc/artix-release" ]; then
-        RECOMMEND_INSTALL="sudo pacman -S"
+        RECOMMEND_INSTALL="pacman -S"
       elif [ -f "/etc/fedora-release" ] || [ -f "/etc/redhat-release" ]; then
-        RECOMMEND_INSTALL="sudo dnf install -y"
+        RECOMMEND_INSTALL="dnf install -y"
       elif [ -f "/etc/gentoo-release" ]; then
         RECOMMEND_INSTALL="emerge -tv"
       else # assume debian based
-        RECOMMEND_INSTALL="sudo apt install -y"
+        RECOMMEND_INSTALL="apt install -y"
       fi
       ;;
     FreeBSD)
-      RECOMMEND_INSTALL="sudo pkg install -y"
+      RECOMMEND_INSTALL="pkg install -y"
       ;;
     NetBSD)
-      RECOMMEND_INSTALL="sudo pkgin install"
+      RECOMMEND_INSTALL="pkgin install"
       ;;
     OpenBSD)
       RECOMMEND_INSTALL="doas pkg_add"
