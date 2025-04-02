@@ -26,7 +26,7 @@ apt-get install -y codespell flake8 black isort
 # change npm registry
 npm config set registry https://mirrors.huaweicloud.com/repository/npm/
 
-LV_BRANCH='release-1.3/neovim-0.9' bash lvim-install.sh -y
+LV_BRANCH='release-1.4/neovim-0.9' bash lvim-install.sh -y
 mkdir ~/.config/lvim
 cp -r * ~/.config/lvim/
 
