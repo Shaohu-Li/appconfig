@@ -1,11 +1,8 @@
 #!/usr/bin/bash
 # installs nvm (Node Version Manager)
 # curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-
 chmod +x nvm_install.sh
 bash ./nvm_install.sh
-
-source ~/.bashrc
 
 nvm install 22
 nvm use 22 # Active the latest version
@@ -25,6 +22,9 @@ apt-get install -y npm python3 python-is-python3 pip shellcheck
 
 # install npm
 apt-get install -y codespell flake8 black isort
+
+# change npm registry
+npm config set registry https://mirrors.huaweicloud.com/repository/npm/
 
 LV_BRANCH='release-1.3/neovim-0.9' bash lvim-install.sh -y
 mkdir ~/.config/lvim
