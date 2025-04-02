@@ -7,11 +7,12 @@ bash ./nvm_install.sh
 
 source ~/.bashrc
 
-nvm --version
 nvm install 22
 nvm use 22 # Active the latest version
 
 # install latest cargo and rustc
+export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
+export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source "$HOME/.cargo/env"
 
