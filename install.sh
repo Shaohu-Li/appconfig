@@ -14,9 +14,9 @@ echo hostname=${hostname} >> ~/.hostname.sh
 sudo apt-get update
 
 # install font
-bash font.sh
+# bash font.sh
 
-directories=("bash" "zsh" "tmux" "peco")
+directories=("bash" "zsh" "tmux" "peco" "lvim")
 
 for dir in "${directories[@]}"; do
     if [ -d "$dir" ] && [ -f "$dir/install.sh" ]; then
