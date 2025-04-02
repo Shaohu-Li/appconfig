@@ -12,4 +12,4 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~
 git clone https://github.com/jimeh/zsh-peco-history.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-peco-history
 
 cp .zshrc /root/
-cp power10k.conf /...
+cp .p10k.zsh /root/
