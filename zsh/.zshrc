@@ -76,6 +76,7 @@ plugins=(
     zsh-syntax-highlighting
     z
     zsh-peco-history
+    zsh-nvm
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -124,8 +125,11 @@ unset __conda_setup
 # <<< conda initialize <<<
 conda deactivate
 
-setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_EXPIRE_DUPS_FIRST HIST_IGNORE_DUPS HIST_IGNORE_ALL_DUPS HIST_FIND_NO_DUPS HIST_SAVE_NO_DUPS
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# 启用自动版本切换
+export NVM_AUTO_USE=true
+export NVM_DIR="$HOME/.nvm"
